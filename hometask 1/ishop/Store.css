@@ -1,0 +1,32 @@
+span {
+  display: block;
+  text-align: center;
+}
+.nameStore{
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+}
+.Products{
+  display: flex;
+  justify-content: center;
+  border: 1px solid gray;
+  border-radius: 20px;
+
+}
+.Product{
+  margin: 50px;
+
+}
+#container {
+  max-width: 1170px;
+  margin: auto;
+  padding: 3                                                                                                                            
+}
+.Name{
+  font-weight: 600;
+}
+.Price{
+  font-weight: 600;
+}

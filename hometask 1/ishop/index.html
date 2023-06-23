@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <meta charset="utf-8" />
+  <title>I-SHOP</title>
+</head> 
+<body> 
+  <div id="container"></div> 
+      
+  <script src="https://unpkg.com/react@15/dist/react.js"></script> 
+  <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script> 
+  <script src="Store.js"></script>
+  <link rel="stylesheet" type="text/css" href="Store.css" />
+
+  <script>
+    var titleStore='Cписок товаров I-SHOP';
+    
+    var listStore=[ 
+      {name:'Iphone-13',code:1,price:"Cтоимость 5000 руб",count:'(20шт в наличии)',img:"https://cdn0.i-store.by/AfrOrF3gWeDA6VOlDG4TzxMv39O7MXnF4CXpKUwGqRM/resize:fit:230/bg:fff/plain/s3://catalog-products/220831153837584463/220929160029406584.jpg@webp"}, 
+      {name:'MacBook Pro 2023',code:2,price:"Cтоимость 12000 руб",count:'(2шт в наличии)',img:'https://cdn0.i-store.by/AfrOrF3gWeDA6VOlDG4TzxMv39O7MXnF4CXpKUwGqRM/resize:fit:230/bg:fff/plain/s3://catalog-products/211019073856638756/211129170021216691.jpg@webp'},
+      {name:'Apple Watch 2021',code:3,price:"Cтоимость 3200 руб",count:'(12шт в наличии)',img:'https://cdn0.i-store.by/AfrOrF3gWeDA6VOlDG4TzxMv39O7MXnF4CXpKUwGqRM/resize:fit:230/bg:fff/plain/s3://catalog-products/220722093725427724/220722113257873018.jpg@webp'},
+    ];
+
+    ReactDOM.render(
+      React.createElement(IshopBlock,{nameStore:titleStore,products:listStore}), 
+      document.getElementById('container') 
+    );
+
+  </script>
+
+</body> 
+</html>
